@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllProducts = async () => {
   try {
     const { data } = await axios.get("https://fakestoreapi.com/products");
-    console.log(data);
+    return data;
   } catch (error) {
     console.log("error is:", error);
   }

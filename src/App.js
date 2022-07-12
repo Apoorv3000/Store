@@ -6,7 +6,7 @@ import { Product, Nav, Home } from "./components";
 
 const App = () => {
   return (
-    <>
+    <div className="bg-light" style={{ height: "100vh" }}>
       <Nav />
       <Container>
         <Routes>
@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/products/:id" element={<Product />} />
         </Routes>
       </Container>
-    </>
+    </div>
   );
 };
 
