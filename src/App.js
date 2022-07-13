@@ -6,7 +6,7 @@ import { Product, Nav, Home } from "./components";
 
 const App = () => {
   return (
-    <div className="bg-light" style={{ height: "100vh" }}>
+    <div style={{ height: "100vh" }}>
       <Nav />
       <Container>
         <Routes>

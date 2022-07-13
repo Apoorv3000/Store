@@ -1,14 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Container, Navbar } from "react-bootstrap";
+import { Button, Container, Navbar } from "react-bootstrap";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav>
       <Navbar
-        variant="dark"
-        bg="primary"
+        variant="light"
+        bg="light"
         className="shadow-sm mb-2 px-4"
         sticky="top"
       >
@@ -21,7 +22,7 @@ const Nav = () => {
             className="display-5 align-items-center d-flex font-weight-bold"
           >
             <div className="display-6 fw-bold d-flex align-self-center">
-              Store <span className="text-warning">.</span>
+              FakeShop <span className="text-danger">.</span>
             </div>
           </Navbar.Brand>
           <form className="d-inline-flex flex-fill mx-4" role="search">
@@ -31,23 +32,23 @@ const Nav = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-warning px-3" type="submit">
+            <button className="btn btn-danger px-3" type="submit">
               Search
             </button>
           </form>
-          <button className="mx-4 btn btn-light text-dark px-3 fw-bold">
+          <button className="mx-4 btn btn-outline-dark  px-3 fw-bold">
             Login
           </button>
-          <div className="position-relative">
+          <Link to="#" className="position-relative">
             <FontAwesomeIcon
               icon={solid("basket-shopping")}
-              className="text-white position-relative"
+              className="text-danger position-relative"
               size="xl"
             />
-            <span className="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+            <span className="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-dark text-light">
               1
             </span>
-          </div>
+          </Link>
         </Container>
       </Navbar>
     </nav>

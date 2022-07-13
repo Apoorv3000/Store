@@ -1,13 +1,14 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 import { Banner, Products } from "..";
 
 const Home = () => {
   return (
-    <div className="bg-gray">
+    <Container>
       <Banner />
       <Products />
-    </div>
+    </Container>
   );
 };
 
