@@ -33,7 +33,7 @@ const ProductInfo = () => {
   };
   return (
     <Container className="mt-5">
-      <Row>
+      <Row className="mb-5">
         {loading ? (
           <Loading />
         ) : (
