@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
 
-import { Product, Nav, Home } from "./components";
+import { Nav, Home, ProductInfo, Footer } from "./components";
 
 const App = () => {
   return (
@@ -10,10 +10,11 @@ const App = () => {
       <Nav />
       <Container>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products/:id" element={<Product />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/products/:id" element={<ProductInfo />} />
         </Routes>
       </Container>
+      <Footer />
     </div>
   );
 };

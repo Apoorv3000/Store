@@ -17,14 +17,15 @@ const Nav = () => {
           fluid
           className="d-flex justify-content-between px-5 align-items-center justify-content-lg-evenly"
         >
-          <Navbar.Brand
-            href="/"
+          <Link
+            to="/"
+            style={{ textDecoration: "none", color: "inherit" }}
             className="display-5 align-items-center d-flex font-weight-bold"
           >
             <div className="display-6 fw-bold d-flex align-self-center">
               FakeShop <span className="text-danger">.</span>
             </div>
-          </Navbar.Brand>
+          </Link>
           <form className="d-inline-flex flex-fill mx-4" role="search">
             <input
               className="form-control me-2"

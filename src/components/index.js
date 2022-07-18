@@ -5,3 +5,5 @@ export { default as Product } from "./Product/Product";
 export { default as ProductList } from "./ProductList/ProductList";
 export { default as Home } from "./Home/Home";
 export { default as Poster } from "./Poster/Poster";
+export { default as ProductInfo } from "./ProductInfo/ProductInfo";
+export { default as Footer } from "./Footer/Footer";
